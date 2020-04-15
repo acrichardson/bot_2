@@ -3,6 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+gem 'simple_form'
+gem "actionpack"
+gem "binding_of_caller"
+# ProgramR is a Ruby implementation of an interpreter for the Artificial
+# Intelligence Markup Language (AIML) based on the work of Dr. Wallace and
+# defined by the Alicebot and AIML Architecture Committee of the A.L.I.C.E.
+# AI Foundation http://alicebot.org
+# Some of the ALICE AIML files have thrown parse errors with certain caraters
+# in my tests, so a subset is available here: https://github.com/robertjwhitney/alice-programr
+gem 'programr'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use sqlite3 as the database for Active Record

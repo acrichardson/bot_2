@@ -67,6 +67,8 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.8.1)
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
     bootstrap (4.0.0)
@@ -102,6 +104,7 @@ GEM
     database_cleaner (1.8.4)
     datetime_picker_rails (0.0.7)
       momentjs-rails (>= 2.8.1)
+    debug_inspector (0.0.3)
     devise (4.7.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -177,6 +180,7 @@ GEM
       ast (~> 2.4.0)
     pg (1.2.3)
     popper_js (1.16.0)
+    programr (0.0.2)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -280,6 +284,9 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    simple_form (5.0.2)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     spring (2.1.0)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -321,8 +328,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack
   administrate
   better_errors
+  binding_of_caller
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.0.0)
   bourbon
@@ -342,6 +351,7 @@ DEPENDENCIES
   launchy
   listen (>= 3.0.5, < 3.2)
   pg
+  programr
   pry-rails
   pry-rescue
   puma (~> 3.11)
@@ -354,6 +364,7 @@ DEPENDENCIES
   rubocop
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_form
   spring
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
